@@ -1,19 +1,52 @@
-# EinkBro: Android Browser for E-Ink Devices
+# OpenOnly
 
-## [Documentation](https://plateaukao.github.io/einkbro/) | [中文說明手冊](https://plateaukao.github.io/einkbro/zh-tw/index.html)
+**OpenOnly is a browser for opening links, not browsing the web.**
 
-EinkBro is designed to fit E-Ink devices' needs; no unnecessary UI transitions and animations, clear B&W icons, useful features for an optimal e-ink reading experience. It's originated from [FOSS Browser](https://codeberg.org/Gaukler_Faun/FOSS_Browser), which is fully free/libre (as in freedom) Android app.
+It is designed for situations where you need access to web content without also having a general-purpose browser available for searching, discovering, or endlessly moving through content.
 
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
-     alt="Get it on F-Droid"
-     height="60">](https://f-droid.org/packages/info.plateaukao.einkbro/)
+The goal is to keep the useful part of a browser: opening a page, using it, and following what is needed from there, while keeping the experience bounded to that purpose.
 
-[<img src="https://badgen.net/github/release/plateaukao/einkbro/stable">](https://github.com/plateaukao/einkbro/releases/latest)   [<img src="https://badgen.net/badge/download/pre-release/orange">](https://github.com/plateaukao/einkbro/releases/tag/snapshot)
+## Why OpenOnly?
 
-[<img src="https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.png"
-     alt="IDE supported by JetBrains"
-     height="24" align="middle">](https://jb.gg/OpenSourceSupport) Development environment supported by [JetBrains](https://jb.gg/OpenSourceSupport)
+Conventional browsers are designed to make the entire web immediately accessible. That is useful, but it also means opening one page can easily turn into unrelated browsing, searching, feeds, or endless scrolling.
 
-<img src="fastlane/metadata/android/en-US/images/icon.png" alt="EinkBro app icon" height="24" align="middle"> App icon by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub">turkkub</a> from <a href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/language" title="language icons">Language icons created by Those Icons - Flaticon</a>
-<a href="https://www.flaticon.com/free-icons/split-screen" title="split screen icons">Split screen icons created by Fajrul Fitrianto - Flaticon</a>
+OpenOnly takes a different approach: the browser is something you **open links with**, rather than somewhere you go to browse.
+
+It is intended for people who still need normal web access when a link needs to be opened, but do not want a conventional browser to be a constant entry point to the wider web.
+
+## Design goals
+
+* Open web links normally.
+* Keep websites functional once opened.
+* Allow useful navigation from opened content.
+* Avoid providing a general starting point for browsing the web.
+* Keep prolonged or self-perpetuating browsing from defeating the purpose of the app.
+* Stay lightweight and independent of website-specific modifications where possible.
+
+## Project status
+
+OpenOnly is currently under active development.
+
+The project is based on the open-source [EinkBro](https://github.com/plateaukao/einkbro) Android browser and uses Android System WebView for web rendering.
+
+The current work focuses on establishing the core OpenOnly browsing model and the infrastructure required to enforce it reliably without unnecessarily interfering with normal web use.
+
+## Building
+
+Requirements include a compatible JDK and Android SDK.
+
+```bash
+./gradlew assembleDebug
+```
+
+Install a debug build on a connected Android device or emulator:
+
+```bash
+./gradlew installDebug
+```
+
+## Upstream and license
+
+OpenOnly is derived from EinkBro and retains the applicable GPLv3 licensing requirements and upstream attribution.
+
+See [`LICENSE`](LICENSE) and [`UPSTREAM.md`](UPSTREAM.md) for details.
