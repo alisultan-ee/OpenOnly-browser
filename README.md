@@ -1,16 +1,16 @@
-# OpenOnly
+# OpenOnly Browser
 
-**OpenOnly is a browser for opening links, not browsing the web.**
+**OpenOnly Browser is a browser for opening links, not browsing the web.**
 
 It is designed for situations where you need access to web content without also having a general-purpose browser available for searching, discovering, or endlessly moving through content.
 
 The goal is to keep the useful part of a browser: opening a page, using it, and following what is needed from there, while keeping the experience bounded to that purpose.
 
-## Why OpenOnly?
+## Why OpenOnly Browser?
 
 Conventional browsers are designed to make the entire web immediately accessible. That is useful, but it also means opening one page can easily turn into unrelated browsing, searching, feeds, or endless scrolling.
 
-OpenOnly takes a different approach: the browser is something you **open links with**, rather than somewhere you go to browse.
+OpenOnly Browser takes a different approach: the browser is something you **open links with**, rather than somewhere you go to browse.
 
 It is intended for people who still need normal web access when a link needs to be opened, but do not want a conventional browser to be a constant entry point to the wider web.
 
@@ -25,7 +25,7 @@ It is intended for people who still need normal web access when a link needs to 
 
 ## Project status
 
-OpenOnly is currently under active development.
+OpenOnly Browser is currently under active development.
 
 The project is based on the open-source [EinkBro](https://github.com/plateaukao/einkbro) Android browser and uses Android System WebView for web rendering.
 
